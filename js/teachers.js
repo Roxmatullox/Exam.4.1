@@ -100,7 +100,7 @@ async function allTeachers() {
     
     pagination.innerHTML += `<button page="+" href="#" ${active == pages ? "disabled":""} >&raquo;</button>`
 
-    if (pages <= 1) {
+    if (pages == 1 || pages == 0) {
       pagination.innerHTML = ""
     }
     
