@@ -79,6 +79,19 @@ header select {
   flex-direction: column;
   row-gap: 5px;
 }
+.card-container > div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.card-container > div button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+}
 
 .search {
   padding: 20px;

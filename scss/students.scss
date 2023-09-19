@@ -71,6 +71,8 @@ header{
   img {
     border-radius: 5px 5px 0 0;
   }
+
+  
 }
 
 .card:hover {
@@ -82,6 +84,21 @@ header{
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+
+  >div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+    button{
+      padding: 10px;
+      border-radius: 4px;
+      background-color: darkslategray;
+      color: white;
+      border: none;
+    }
+  }
 }
 
 

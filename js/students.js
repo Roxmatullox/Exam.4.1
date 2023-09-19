@@ -23,7 +23,9 @@ function getStudent(student) {
     <img src="${student.avatar}" alt="Avatar" style="width:100%">
     <div class="card-container">
       <h4><b>${student.id}. ${student.firstName} ${student.lastName}</b></h4>
-      <p>${student.email}</p>
+      <p>Emasil : ${student.email}</p>
+      <p>IsWork : ${student.isWork}</p>
+      <p>Birthday : ${student.birthday}</p>
       <div class="delete-btn-div"><button delete="${student.id}" class="delete-btn">Delete</button> <button edit="${student.id}" class="delete-btn">Edit</button></div>
     </div>
   </div>
