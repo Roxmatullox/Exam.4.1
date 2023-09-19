@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>students</title>
+  <link rel="stylesheet" href="css/students.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="js/const.js"></script>
+  <script defer src="js/students.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-div">
+        <button class="modal-open-btn">
+          Add Students
+        </button>
+        <select id="sort-by-birthday">
+          <option value="normal">Normal</option>
+          <option value="asc">asc</option>
+          <option value="desc">desc</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="search">
+      <div class="container">
+        <div class="search-div">
+          <input class="search-input" type="text" placeholder="Search firstname...">
+          <button class="total-students"></button>
+        </div>
+      </div>
+    </div>
+    <div class="students">
+      <div class="container">
+        <div class="students-row">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal">
+    <div class="modal-content">
+      <button class="modal-close">
+        x
+      </button>
+      <form >
+        <div>
+          <label for="firstname1">Firstname</label>
+          <input required type="text" id="firstname1">
+        </div>
+        <div>
+          <label for="lastname">Lastname</label>
+          <input required type="text" id="lastname">
+        </div>
+        <div>
+          <label for="image">Image link</label>
+          <input required type="text" id="image">
+        </div>
+        <div>
+          <label for="groups">Birth day</label>
+          <input required  type="date" id="groups">
+        </div>
+        <div>
+          <label for="checkbox">IsWork?</label>
+          <input  class="checkbox" type="checkbox" id="checkbox">
+        </div>
+        <div>
+          <label for="field">Field</label>
+          <input required type="text" id="field">
+        </div>
+        <div>
+          <label for="number">Phone number</label>
+          <input required type="text" id="number">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input required type="email" id="email">
+        </div>
+        <button type="submit">Add.</button>
+      </form>
+    </div>
+  </div>
+  <div id="loading">
+    <div class="loading">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+  </div>
+</body>
+</html>
